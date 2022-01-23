@@ -36,6 +36,7 @@ int fib_rec(int target, __int128 term1, __int128 term2){
         cout<<term1;
         return 0;
     }
+    cout<<term1;
     fib_rec(target-1, term2, term1+term2);
     return 0;
 }
@@ -43,6 +44,7 @@ int fib_rec(int target, __int128 term1, __int128 term2){
 int fib_loop(int target){
     __int128 term1 = 1, term2 = 1, dummy = 0;
     for (int x = 0; x< target/2 - 1; x++){
+        cout<<term1;
         term1 = term1 + term2;
         term2 = term1 + term2;
     }

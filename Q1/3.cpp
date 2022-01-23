@@ -87,6 +87,11 @@ int main() {
     // cout<<"Time spent:"<<duration_cast<microseconds>(end - start).count()<<" microseconds\n\n";
     // start = end;
     cout<<"Via Recursion and memoization, "<< fib_memorec(100) <<"\n";
+    
+    cout<<"Via Recursion and memoization, "<< fib_memorec(100) <<"\n";
+    for (int i = 0; i<100; i++){
+        cout<<memo[i]<<endl;
+    }
     // end = high_resolution_clock::now();
     // cout<<"Time spent:"<<duration_cast<microseconds>(end - start).count()<<" microseconds\n\n";
     // start = end;
